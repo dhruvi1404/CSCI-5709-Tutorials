@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+**Date Created**: June 4, 2024\
+**Last Modified**: June 6, 2024\
+**Author**: Dhruvi Shah
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Project Repository**: [CSCI 5709 Tutorials - Registration App](https://git.cs.dal.ca/shah14/csci-5709-tutorials/-/tree/main/Tutorial3/registration-app?ref_type=heads)\
+**Netlify Deployment Link**: [Registration Form App Deployment](https://main--cool-centaur-2f7b58.netlify.app/register)
 
-## Available Scripts
+#### Overview
 
-In the project directory, you can run:
+This application is a registration form built as part of Tutorial 3 for CSCI 5709 at Dalhousie University. The form includes validation for inputs such as name, email, and password, ensuring data integrity and security.
 
-### `npm start`
+#### Technology Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   **React**: Used for building the user interface with state management for form handling.
+-   **NPM**: Package manager for managing the project's dependencies.
+-   **Bootstrap**: For styling the form and ensuring it is responsive across different devices.
+-   **Validator Library**: Utilized for robust validation of email addresses.
+-   **ESLint**: Integrated into the development environment to enforce code quality standards.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Code Snippets and Modifications
 
-### `npm test`
+The core functionality of the form, including input validation and state management, leverages common React patterns. The email validation regex used is adapted from widely accepted standards and further customized to ensure it meets the specific requirements of this application:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+javascript
 
-### `npm run build`
+Copy code
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`if (!validator.isEmail(formData.email)) {
+    newErrors.email = 'Invalid email format.';
+}`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This approach was chosen for its balance between complexity and performance, providing a user-friendly validation feedback system.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Justification
 
-### `npm run eject`
+React and Bootstrap were chosen for their widespread use and reliability in developing responsive web applications. The Validator library is employed to handle complex validations efficiently, reducing the effort needed to implement custom validation logic.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Deployment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The application is deployed on Netlify, providing a live version accessible via the internet. This allows for easy access and testing of the application's functionality in a production-like environment.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Sources Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The validation patterns were inspired by various community resources, including Stack Overflow and the Mozilla Developer Network (MDN), ensuring adherence to best practices in web development.
 
-## Learn More
+#### Acknowledgements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks to the contributors of the open-source libraries used in this project and the instructors of CSCI 5709 for providing the guidance and requirements necessary to complete this tutorial.
