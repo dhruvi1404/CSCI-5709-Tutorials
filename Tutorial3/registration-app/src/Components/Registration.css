@@ -1,0 +1,51 @@
+/* RegistrationForm Container */
+.registration-form-container {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Maximum width of the form */
+    margin: 50px auto; /* Centering the form with auto margins */
+}
+
+/* Labels styling */
+.form-label {
+    font-weight: bold; /* Makes text bold */
+    color: #333; /* Dark grey color for text */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+/* Input fields styling */
+.form-control {
+    background-color: #fff; /* White background for input */
+    border: 1px solid #ced4da; /* Standard Bootstrap border color */
+    border-radius: 0.25rem; /* Rounded borders for inputs */
+}
+
+/* Adjustments for specific input group spacing */
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Styling for dropdown/select */
+.custom-select {
+    border-radius: 0.25rem; /* Consistent rounded borders */
+    height: calc(2.25rem + 2px); /* Standard height matching inputs */
+}
+
+/* Button styling */
+.btn-register {
+    background-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff; /* Border the same as background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for larger button */
+    font-size: 16px; /* Larger text */
+    border-radius: 0.25rem; /* Rounded borders */
+    width: 100%; /* Full width button */
+    margin-top: 10px; /* Margin top for spacing from last element */
+}
+
+.btn-register:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Border color on hover */
+}
