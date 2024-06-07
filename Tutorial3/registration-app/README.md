@@ -21,9 +21,6 @@ This application is a registration form built as part of Tutorial 3 for CSCI 570
 
 The core functionality of the form, including input validation and state management, leverages common React patterns. The email validation regex used is adapted from widely accepted standards and further customized to ensure it meets the specific requirements of this application:
 
-javascript
-
-Copy code
 
 `if (!validator.isEmail(formData.email)) {
     newErrors.email = 'Invalid email format.';
